@@ -1,6 +1,6 @@
 # Advanced-Library-Management-System-Projet2-Part2-using-PostgreSQL
 
-# 📚 Library Management System (Advanced Level – Q3 to Q19)
+# 📚 Library Management System (Advanced Level – Q13 to Q19)
 
 Welcome to **Part 2** of my end-to-end SQL project based on a Library Management System.  
 This segment focuses on **advanced SQL problem-solving** using **PostgreSQL**, with emphasis on:
