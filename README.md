@@ -140,10 +140,10 @@ CREATE TABLE return_status
 
 ```
 
-## ✅ Tasks Covered (Q13–Q19)
+## ✅ Tasks Covered (Q13–Q19) - Advanced SQL concepts
 
 
-** Task 13: Identify Members with Overdue Books, Write a query to identify members who have overdue books (assume a 30-day return period). Display the member's name, book title, issue date, and days overdue.**
+**Task 13: Identify Members with Overdue Books, Write a query to identify members who have overdue books (assume a 30-day return period). Display the member's name, book title, issue date, and days overdue.**
 
 
 - Approach to Solve this challenge
@@ -160,7 +160,7 @@ left join members m on  i.issued_member_id=m.member_id
 where return_id is null and CURRENT_DATE - issued_date > 30;
 ```
 
-** Task 14: Update Book Status on Return, Write a query to update the status of books in the books table to "available" when they are returned (based on entries in the return_status table).**
+**Task 14: Update Book Status on Return, Write a query to update the status of books in the books table to "available" when they are returned (based on entries in the return_status table).**
 
 ```sql
 select * from books;
@@ -241,7 +241,7 @@ call add_return_records('RS139','IS135','Good');
 
 ```
 
-** Task 15: Branch Performance Report. Create a query that generates a performance report for each branch, showing the number of books issued, the number of books returned, and the total revenue generated from book rentals.**
+**Task 15: Branch Performance Report. Create a query that generates a performance report for each branch, showing the number of books issued, the number of books returned, and the total revenue generated from book rentals.**
 
 
 -- cnt of books issued
@@ -331,7 +331,7 @@ limit 3;
 ```
 
 
-** Task 18: Stored Procedure, Objective: Create a stored procedure to manage the status of books in a library system.**
+**Task 18: Stored Procedure, Objective: Create a stored procedure to manage the status of books in a library system.
 Description: Write a stored procedure that updates the status of a book based on its issuance or return. Specifically:
 If a book is issued, the status should change to 'no'.
 If a book is returned, the status should change to 'yes'.**
@@ -380,8 +380,8 @@ CALL issue_book('IS155', 'C108', '978-0-553-29698-2', 'E104');
 CALL issue_book('IS156', 'C108', '978-0-375-41398-8', 'E104');
 ```
 
-** Task 19: Create Table As Select (CTAS), Objective: Create a CTAS (Create Table As Select) query to identify overdue books and calculate fines.**
-**Description: Write a CTAS query to create a new table that lists each member and  the books they have issued but not returned within 30 days. **
+**Task 19: Create Table As Select (CTAS), Objective: Create a CTAS (Create Table As Select) query to identify overdue books and calculate fines.
+Description: Write a CTAS query to create a new table that lists each member and  the books they have issued but not returned within 30 days. **
 
 - The table should include:
 - The number of overdue books.
@@ -404,11 +404,14 @@ order by 3 desc;
 
 ---
 
-## 💻 Technologies Used
+## 💻 Tools & Skills Demonstrated
 
-- **MySQL Workbench** (for SQL scripting and testing)
-- **PostgreSQL** (for syntax validation and compatibility)
-- **SQL**: Joins, Group By, CRUD, CTAS, Date Filtering, Aggregates
+- **PostgreSQL** 
+- Relational Joins across multiple tables
+- Date filtering and interval logic
+- Stored Procedures (for automation and validation)
+- CTAS to persist analytics into physical tables
+- GROUP BY, aggregate logic
 
 ---
 
@@ -424,3 +427,11 @@ order by 3 desc;
 Kaushik Roy
 - **Email**: 1998kaushik.roy@gmail.com
 - **LinkedIn**: [https://www.linkedin.com/in/kaushikroy98/](https://www.linkedin.com/in/kaushikroy98/)
+
+
+## ⭐ Like this project?
+
+If you found this project helpful:
+- Star 🌟 the repo
+- Share it with fellow learners
+- Fork it and try your own customizations!
